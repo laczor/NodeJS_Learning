@@ -1,0 +1,44 @@
+Step 1: Update the Repositories
+#apt-get update
+
+Add PPA Repository
+#apt-get install software-properties-common
+
+Add Official CouchDB PPA Repository
+#add-apt-repository ppa:couchdb/stable
+
+Update the System
+#apt-get update
+
+Step 2: Installing CouchDB 
+#apt-get install couchdb
+
+Step 3: Fixing Ownership and Permission
+#chown -R couchdb:couchdb /usr/bin/couchdb /etc/couchdb /usr/share/couchdb
+#chmod -R 0770 /usr/bin/couchdb /etc/couchdb /usr/share/couchdb
+
+Step 4: Restarting CouchDB
+#systemctl restart couchdb
+#curl localhost:5984
+
+Step 5: Accessing Futon
+
+Open Web Browser
+
+localhost:5984
+
+Step 6: Accessing Web Application of Futon
+
+http://localhost:5984/_utils/index.html
+
+Step 7: Securing Futon
+Click on Fix it in the end
+
+Add Admin and Password to Login
+
+Your Couchdb and Futon on Ubuntu 16.04 is Up and Running Successfully.....
+
+
+youtube.com/watch?v=TsPAUDIbgYg
+
+
